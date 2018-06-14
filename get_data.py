@@ -18,10 +18,9 @@ previous_page = max_index[1].get('href')
 previous_index = int(previous_page.split('index')[1].split('.')[0])
 articles = soup.find_all('div', 'r-ent')
 
-print('Start crawling ptt %s board from page %d to %d' %
-      (BOARD_NAME, previous_index+1, previous_index+1 - PAGES))
-
 index = previous_index+1
+break_point = False
+is_first_page = True
 
 while(True):
     time.sleep(0.01)
@@ -29,6 +28,7 @@ while(True):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
     articles = soup.find_all('div', 'r-ent')
+    print(index)
 
     for article in articles:
         meta = article.find('div', 'title').find('a')
@@ -44,7 +44,15 @@ while(True):
                 push = 0
             if push == "爆":
                 push = 9999
-
+            split_date = date.split('/')
+            if not(is_first_page):
+                if(int(split_date[0]) < 6):
+                    break_point = True
+                    break
+                if(int(split_date[0]) == 6 and int(split_date[1]) < 12):
+                    break_point = True
+                    break
     index -= 1
-    if(index == 6000):
+    is_first_page = False
+    if(break_point):
         break
