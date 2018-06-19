@@ -7,7 +7,7 @@ import codecs
 from bs4 import BeautifulSoup
 
 
-war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "curry", "KD", "kd", "嘴綠", "Klay", "durant", "Durant",
+war_match_dict = ["勇士", "咖哩", "柯瑞", "K湯", "Curry", "CURRY", "curry", "KD", "kd", "嘴綠", "Klay", "durant", "Durant",
                   "kerr", "ai", "AI", "McGee", "杜蘭特", "Green", "green", "KT", "kt", "格林", "湯森", "我勇", "浪花", "四巨頭", "四星"]
 cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "lbj", "LeBron", "lebron", "James", "james", 'tt', "TT",
                   "Korver", "Jeff", "JR", "jr", "丁尺", "smith", "皇", "我皇", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
@@ -42,7 +42,10 @@ def is_related(title):
         return False
 
 
-def get_data(start_month, start_day, end_month, end_day):
+def get_data(start_date, end_date):
+    start_month, start_day = (start_date.split("/"))
+    end_month, end_day = (end_date.split("/"))
+
     BOARD_NAME = "NBA"
     url = 'https://www.ptt.cc/bbs/' + BOARD_NAME + '/index.html'
 
@@ -65,8 +68,12 @@ def get_data(start_month, start_day, end_month, end_day):
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'lxml')
         articles = soup.find_all('div', 'r-ent')
-
+        aaarrr = 0
         for article in articles:
+            aaarrr += 1
+            if(aaarrr > 20):
+                break_point = True
+                break
             meta = article.find('div', 'title').find('a')
             if meta == None:
                 continue
@@ -77,15 +84,15 @@ def get_data(start_month, start_day, end_month, end_day):
                 split_date = date.split('/')
 
                 if not(is_first_page):
-                    if(int(split_date[0]) < start_month):
+                    if(int(split_date[0]) < int(start_month)):
                         break_point = True
                         break
-                    if(int(split_date[0]) == start_month and int(split_date[1]) < start_day):
+                    if(int(split_date[0]) == int(start_month) and int(split_date[1]) < int(start_day)):
                         break_point = True
                         break
-                    if(int(split_date[0]) > end_month):
+                    if(int(split_date[0]) > int(end_month)):
                         continue
-                    if(int(split_date[0]) == end_month and int(split_date[1]) > end_day):
+                    if(int(split_date[0]) == int(end_month) and int(split_date[1]) > int(end_day)):
                         continue
                 if(is_related(title)):
                     response = requests.get(
@@ -93,9 +100,14 @@ def get_data(start_month, start_day, end_month, end_day):
                     soup = BeautifulSoup(response.text, 'lxml')
                     post = soup.find('div', 'bbs-screen bbs-content')
 
-                    if(post.contents[4]):
+                    if(re.search("※ 發信站", post.contents[5].getText())):
                         titles_collection.append(title)
                         contents_collection.append(post.contents[4])
+                        print("==============================================")
+                        print(title)
+                        print("https://www.ptt.cc"+link)
+                        print(post.contents[4])
+                        print("==============================================")
                         comments = soup.find_all('div', 'push')
                         c = []
                         for comment in comments:
@@ -124,13 +136,18 @@ def word_frequecy(text):
 def team_label(word_frequency):
     cav_score = 0
     war_score = 0
+    output.write("CAV_TERM\n")
     for word in cav_match_dict:
         if word in word_frequency:
+            output.write(word+"/ ")
             cav_score += word_frequency[word]
+    output.write("\nWAR_TERM\n")
     for word in war_match_dict:
         if word in word_frequency:
+            output.write(word + "/ ")
             war_score += word_frequency[word]
-    print("cav_score: "+str(cav_score) + " / war_score"+str(war_score))
+    output.write("\ncav_score: "+str(cav_score) +
+                 " / war_score: "+str(war_score)+"\n")
     if(cav_score > war_score):
         return "CAV"
     elif(cav_score < war_score):
@@ -142,49 +159,52 @@ def team_label(word_frequency):
 def count_score(text):
     seg_list = jieba.cut(text, cut_all=False)
     poslist = []
-    posfile = codecs.open(
-        './dict/NTUSD_positive_utf8.txt', 'r', encoding='utf8')
+    posfile = open('./dict/NTUSD_positive_utf8.txt', 'r')
     for aline in posfile:
         aline = aline.strip()
         poslist.append(aline)
     posfile.close()
 
     neglist = []
-    negfile = codecs.open(
-        './dict/NTUSD_negative_utf8.txt', 'r', encoding='utf8')
+    negfile = open('./dict/NTUSD_negative_utf8.txt', 'r')
     for aline in negfile:
         aline = aline.strip()
         neglist.append(aline)
     negfile.close()
 
-    print(text)
+    # print(text)
 
     pos = [x for x in seg_list if x in poslist]
     neg = [x for x in seg_list if x in neglist]
-    print("=========================")
-    print("|    POSITIVE FOUND     |")
-    print("=========================")
+    output.write("\n=======================POSITIVE===================\n")
+    output.write(str(len(pos))+"\n")
     for x in pos:
-        print(x)
-    print("=========================")
-    print("|    NEGATIVE FOUND     |")
-    print("=========================")
+        output.write(x+"/ ")
+    output.write("\n=======================NEGATIVE===================\n")
+    output.write(str(len(neg))+"\n")
     for x in neg:
-        print(x)
-    print("=========================")
+        output.write(x+"/ ")
 
 
 titles_collection = []
 contents_collection = []
 comments_collection = []
 
-get_data(6, 1, 6, 4)
+get_data("6/1", "6/4")
 
+for i in range(10):
+    file_name = './game1/No.'+str(i)+".txt"
+    output = open(file_name, 'w+')
+    output.write("=======================TITLE======================\n")
+    output.write(titles_collection[i])
+    output.write("\n=======================CONTENT====================\n")
+    seg = jieba.cut(contents_collection[i], cut_all=False)
+    output.write("/ ".join(seg))
+    output.write("\n=======================LABEL======================\n")
+    output.write(team_label(word_frequecy(contents_collection[i])))
+    count_score(contents_collection[i])
+    output.close()
 
-for i in range(5):
-    print(team_label(word_frequecy(contents_collection[i])))
-    print(titles_collection[i])
-    print(contents_collection[i])
 # for title in titles_collection:
 #     print(title)
 #     seg_list = jieba.cut(title, cut_all=False)
