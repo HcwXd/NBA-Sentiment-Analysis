@@ -1,6 +1,30 @@
 import requests
 import time
+import re
 from bs4 import BeautifulSoup
+
+war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "KD",
+                  "嘴綠", "Klay", "杜蘭特", "Green", "KT", "格林", "湯森", "我勇"]
+cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "LeBron",
+                  "James", "Korver", "Jeff", "JR", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
+
+
+def is_related(title):
+    war_related = False
+    cav_related = False
+    if any(re.search(s, title, re.IGNORECASE) for s in war_match_dict):
+        war_related = True
+    if any(re.search(s, title, re.IGNORECASE) for s in cav_match_dict):
+        cav_related = True
+
+    if(war_related and cav_related):
+        return "BOTH"
+    elif (war_related):
+        return "WAR"
+    elif(cav_related):
+        return "CAVS"
+    else:
+        return False
 
 
 def get_data(start_month, start_day, end_month, end_day):
@@ -15,7 +39,8 @@ def get_data(start_month, start_day, end_month, end_day):
     previous_index = int(previous_page.split('index')[1].split('.')[0])
     articles = soup.find_all('div', 'r-ent')
 
-    index = previous_index+1
+    # index = previous_index+1
+    index = 6014
     is_first_page = True
     break_point = False
 
@@ -47,19 +72,23 @@ def get_data(start_month, start_day, end_month, end_day):
                         continue
                     if(int(split_date[0]) == end_month and int(split_date[1]) > end_day):
                         continue
-                response = requests.get(
-                    "https://www.ptt.cc"+link)
-                soup = BeautifulSoup(response.text, 'lxml')
-                post = soup.find('div', 'bbs-screen bbs-content')
+                if(is_related(title)):
+                    response = requests.get(
+                        "https://www.ptt.cc"+link)
+                    soup = BeautifulSoup(response.text, 'lxml')
+                    post = soup.find('div', 'bbs-screen bbs-content')
 
-                if(post.contents[4]):
-                    titles_collection.append(title)
-                    contents_collection.append(post.contents[4])
-                    comments = soup.find_all('div', 'push')
-                    c = []
-                    for comment in comments:
-                        c.append(comment.getText())
-                    comments_collection.append(c)
+                    if(post.contents[4]):
+                        titles_collection.append(title)
+                        contents_collection.append(post.contents[4])
+                        comments = soup.find_all('div', 'push')
+                        c = []
+                        for comment in comments:
+                            c.append(comment.getText())
+                        comments_collection.append(c)
+                else:
+                    print("no the title is "+title)
+
         if(break_point):
             break
         index -= 1
@@ -72,5 +101,5 @@ comments_collection = []
 
 get_data(6, 1, 6, 4)
 
-print(titles_collection[0])
-print(comments_collection[0][0])
+for title in titles_collection:
+    print(title)
