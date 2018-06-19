@@ -7,10 +7,10 @@ import codecs
 from bs4 import BeautifulSoup
 
 
-war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "KD",
-                  "嘴綠", "Klay", "杜蘭特", "Green", "KT", "格林", "湯森", "我勇"]
-cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "LeBron",
-                  "James", "Korver", "Jeff", "JR", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
+war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "curry", "KD", "kd", "嘴綠", "Klay", "durant", "Durant",
+                  "kerr", "ai", "AI", "McGee", "杜蘭特", "Green", "green", "KT", "kt", "格林", "湯森", "我勇", "浪花", "四巨頭", "四星"]
+cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "lbj", "LeBron", "lebron", "James", "james", 'tt', "TT",
+                  "Korver", "Jeff", "JR", "jr", "丁尺", "smith", "皇", "我皇", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
 
 
 def add_word_to_jieba(word_collection):
@@ -121,6 +121,24 @@ def word_frequecy(text):
     return frequency
 
 
+def team_label(word_frequency):
+    cav_score = 0
+    war_score = 0
+    for word in cav_match_dict:
+        if word in word_frequency:
+            cav_score += word_frequency[word]
+    for word in war_match_dict:
+        if word in word_frequency:
+            war_score += word_frequency[word]
+    print("cav_score: "+str(cav_score) + " / war_score"+str(war_score))
+    if(cav_score > war_score):
+        return "CAV"
+    elif(cav_score < war_score):
+        return "WAR"
+    else:
+        return "EQ"
+
+
 def count_score(text):
     seg_list = jieba.cut(text, cut_all=False)
     poslist = []
@@ -143,12 +161,17 @@ def count_score(text):
 
     pos = [x for x in seg_list if x in poslist]
     neg = [x for x in seg_list if x in neglist]
-
+    print("=========================")
+    print("|    POSITIVE FOUND     |")
+    print("=========================")
     for x in pos:
         print(x)
-
+    print("=========================")
+    print("|    NEGATIVE FOUND     |")
+    print("=========================")
     for x in neg:
         print(x)
+    print("=========================")
 
 
 titles_collection = []
@@ -157,9 +180,14 @@ comments_collection = []
 
 get_data(6, 1, 6, 4)
 
+
+for i in range(5):
+    print(team_label(word_frequecy(contents_collection[i])))
+    print(titles_collection[i])
+    print(contents_collection[i])
 # for title in titles_collection:
 #     print(title)
 #     seg_list = jieba.cut(title, cut_all=False)
 #     print("/ ".join(seg_list))
-count_score(contents_collection[2])
-count_score(contents_collection[3])
+# count_score(contents_collection[2])
+# count_score(contents_collection[3])
