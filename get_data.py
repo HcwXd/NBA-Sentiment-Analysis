@@ -12,8 +12,16 @@ war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "KD",
 cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "LeBron",
                   "James", "Korver", "Jeff", "JR", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
 
-jieba.add_word((s) for s in war_match_dict)
-jieba.add_word((s) for s in cav_match_dict)
+
+def add_word_to_jieba(word_collection):
+    for word in word_collection:
+        jieba.add_word(word)
+
+
+add_word_to_jieba(war_match_dict)
+add_word_to_jieba(cav_match_dict)
+# jieba.add_word((s) for s in war_match_dict)
+# jieba.add_word((s) for s in cav_match_dict)
 
 
 def is_related(title):
@@ -104,13 +112,43 @@ def get_data(start_month, start_day, end_month, end_day):
 
 def word_frequecy(text):
     frequency = {}
-    seg_list = jieba.cut(contents_collection[0], cut_all=False)
+    seg_list = jieba.cut(text, cut_all=False)
     for word in seg_list:
         if word in frequency:
             frequency[word] += 1
         else:
             frequency[word] = 1
     return frequency
+
+
+def count_score(text):
+    seg_list = jieba.cut(text, cut_all=False)
+    poslist = []
+    posfile = codecs.open(
+        './dict/NTUSD_positive_utf8.txt', 'r', encoding='utf8')
+    for aline in posfile:
+        aline = aline.strip()
+        poslist.append(aline)
+    posfile.close()
+
+    neglist = []
+    negfile = codecs.open(
+        './dict/NTUSD_negative_utf8.txt', 'r', encoding='utf8')
+    for aline in negfile:
+        aline = aline.strip()
+        neglist.append(aline)
+    negfile.close()
+
+    print(text)
+
+    pos = [x for x in seg_list if x in poslist]
+    neg = [x for x in seg_list if x in neglist]
+
+    for x in pos:
+        print(x)
+
+    for x in neg:
+        print(x)
 
 
 titles_collection = []
@@ -123,5 +161,5 @@ get_data(6, 1, 6, 4)
 #     print(title)
 #     seg_list = jieba.cut(title, cut_all=False)
 #     print("/ ".join(seg_list))
-apple = word_frequecy(contents_collection)
-print(apple)
+count_score(contents_collection[2])
+count_score(contents_collection[3])
