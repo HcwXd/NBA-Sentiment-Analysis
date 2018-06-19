@@ -1,12 +1,19 @@
 import requests
 import time
 import re
+import jieba
+import codecs
+
 from bs4 import BeautifulSoup
+
 
 war_match_dict = ["勇士", "咖哩", "柯瑞", "Curry", "KD",
                   "嘴綠", "Klay", "杜蘭特", "Green", "KT", "格林", "湯森", "我勇"]
 cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "LeBron",
                   "James", "Korver", "Jeff", "JR", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
+
+jieba.add_word((s) for s in war_match_dict)
+jieba.add_word((s) for s in cav_match_dict)
 
 
 def is_related(title):
@@ -40,7 +47,7 @@ def get_data(start_month, start_day, end_month, end_day):
     articles = soup.find_all('div', 'r-ent')
 
     # index = previous_index+1
-    index = 6014
+    index = 5983
     is_first_page = True
     break_point = False
 
@@ -86,13 +93,24 @@ def get_data(start_month, start_day, end_month, end_day):
                         for comment in comments:
                             c.append(comment.getText())
                         comments_collection.append(c)
-                else:
-                    print("no the title is "+title)
+                # else:
+                #     print("no the title is "+title)
 
         if(break_point):
             break
         index -= 1
         is_first_page = False
+
+
+def word_frequecy(text):
+    frequency = {}
+    seg_list = jieba.cut(contents_collection[0], cut_all=False)
+    for word in seg_list:
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+    return frequency
 
 
 titles_collection = []
@@ -101,5 +119,9 @@ comments_collection = []
 
 get_data(6, 1, 6, 4)
 
-for title in titles_collection:
-    print(title)
+# for title in titles_collection:
+#     print(title)
+#     seg_list = jieba.cut(title, cut_all=False)
+#     print("/ ".join(seg_list))
+apple = word_frequecy(contents_collection)
+print(apple)
