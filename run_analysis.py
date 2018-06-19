@@ -180,8 +180,6 @@ def count_score(text):
             pos.append(word)
         elif word in neglist:
             neg.append(word)
-    # pos = [x for x in seg_list if x in poslist]
-    # neg = [x for x in seg_list if x in neglist]
     output.write("\n=======================POSITIVE===================\n")
     output.write(str(len(pos))+"\n")
     for x in pos:
