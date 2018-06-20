@@ -2,7 +2,6 @@ import requests
 import time
 import re
 import jieba
-import codecs
 
 from bs4 import BeautifulSoup
 
@@ -20,8 +19,6 @@ def add_word_to_jieba(word_collection):
 
 add_word_to_jieba(war_match_dict)
 add_word_to_jieba(cav_match_dict)
-# jieba.add_word((s) for s in war_match_dict)
-# jieba.add_word((s) for s in cav_match_dict)
 
 
 def is_related(title):
@@ -195,23 +192,17 @@ def count_score(text, team):
 
     if(team == "WAR"):
         points = len(pos)-len(neg)
-        # war_total_points += points
         point_table[0] += points
         if(points > 0):
-            # war_good_posts += 1
             point_table[1] += 1
         elif(points < 0):
-            # war_good_posts -= 1
             point_table[1] -= 1
     elif(team == "CAV"):
         points = len(pos)-len(neg)
-        # cav_total_points += points
         point_table[2] += points
         if(points > 0):
-            # cav_good_posts += 1
             point_table[3] += 1
         elif(points < 0):
-            # cav_good_posts -= 1
             point_table[3] -= 1
     return point_table
 
