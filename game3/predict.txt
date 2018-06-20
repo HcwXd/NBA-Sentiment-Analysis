@@ -1,0 +1,4 @@
+Cav total points: -21
+War total points: 2
+Cav good post: 2
+War good post: -1

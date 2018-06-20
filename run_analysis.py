@@ -57,8 +57,8 @@ def get_data(start_date, end_date):
     previous_index = int(previous_page.split('index')[1].split('.')[0])
     articles = soup.find_all('div', 'r-ent')
 
-    index = previous_index+1
-    # index = 5983
+    # index = previous_index+1
+    index = 6006
     is_first_page = True
     break_point = False
 
@@ -216,43 +216,44 @@ def count_score(text, team):
     return point_table
 
 
-# for game_index in range(4):
-titles_collection = []
-contents_collection = []
-comments_collection = []
-cav_total_points = 0
-war_total_points = 0
-cav_good_posts = 0
-war_good_posts = 0
-team = ""
+for game_index in range(4):
+    index = game_index+1
+    titles_collection = []
+    contents_collection = []
+    comments_collection = []
+    cav_total_points = 0
+    war_total_points = 0
+    cav_good_posts = 0
+    war_good_posts = 0
+    team = ""
 
-game_date = ["5/29", "6/1", "6/4", "6/7", "6/9"]
-data_date = ["5/31", "6/3", "6/6", "6/8"]
+    game_date = ["5/29", "6/1", "6/4", "6/7", "6/9"]
+    data_date = ["5/31", "6/3", "6/6", "6/8"]
 
-get_data(game_date[0], data_date[0])
+    get_data(game_date[game_index], data_date[game_index])
 
-for i in range(len(titles_collection)):
-    file_name = './game1/No.'+str(i)+".txt"
+    for i in range(len(titles_collection)):
+        file_name = './game'+str(index)+'/No.'+str(i)+".txt"
+        output = open(file_name, 'w+')
+        output.write("=======================TITLE======================\n")
+        output.write(titles_collection[i])
+        output.write("\n=======================CONTENT====================\n")
+        seg = jieba.cut(contents_collection[i], cut_all=False)
+        output.write("/ ".join(seg))
+        output.write("\n=======================LABEL======================\n")
+        team = team_label(word_frequecy(contents_collection[i]))
+        output.write(team)
+        point_table = count_score(contents_collection[i], team)
+        output.close()
+        war_total_points += point_table[0]
+        war_good_posts += point_table[1]
+        cav_total_points += point_table[2]
+        cav_good_posts += point_table[3]
+
+    file_name = './game'+str(index)+'/predict.txt'
     output = open(file_name, 'w+')
-    output.write("=======================TITLE======================\n")
-    output.write(titles_collection[i])
-    output.write("\n=======================CONTENT====================\n")
-    seg = jieba.cut(contents_collection[i], cut_all=False)
-    output.write("/ ".join(seg))
-    output.write("\n=======================LABEL======================\n")
-    team = team_label(word_frequecy(contents_collection[i]))
-    output.write(team)
-    point_table = count_score(contents_collection[i], team)
+    output.write("Cav total points: "+str(cav_total_points)+"\n")
+    output.write("War total points: "+str(war_total_points)+"\n")
+    output.write("Cav good post: "+str(cav_good_posts)+"\n")
+    output.write("War total points: "+str(war_good_posts)+"\n")
     output.close()
-    war_total_points += point_table[0]
-    war_good_posts += point_table[1]
-    cav_total_points += point_table[2]
-    cav_good_posts += point_table[3]
-
-file_name = './game1/predict.txt'
-output = open(file_name, 'w+')
-output.write("Cav total points: "+str(cav_total_points)+"\n")
-output.write("War total points: "+str(war_total_points)+"\n")
-output.write("Cav good post: "+str(cav_good_posts)+"\n")
-output.write("War total points: "+str(war_good_posts)+"\n")
-output.close()

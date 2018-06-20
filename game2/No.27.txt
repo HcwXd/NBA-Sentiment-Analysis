@@ -1,0 +1,28 @@
+=======================TITLE======================
+[情報] T Thompson及Love下戰可能面臨禁賽
+=======================CONTENT====================
+
+/ Tristan/  / Thompson/  / and/  / Kevin/  / Love/  / may/  / face/  / suspensions/  / due/  / to/  / an/  / altercation/  / in/  / the/  / final/  / seconds/  / of/  / Game/  / 1/  / on/  / Thursday/  / night/ ./ 
+/ 
+/ According/  / to/  / ESPN/ '/ s/  / Chris/  / Hayes/ ,/  / Thompson/  / might/  / face/  / a/  / suspension/  / after/  / shoving/  / the/  / ball/  / in/  / the/  / face/  / of/  / Draymond/  / Green/  / and/  / "/ Kevin/  / Love/ ,/  / who/  / was/  / not/  / in/  / the/  / game/  / at/  / the/  / time/ ,/  / could/  / be/  / hit/  / with/  / a/  / one/ -/ game/  / suspension/  / for/  / stepping/  / onto/  / the/  / court/  / while/  / an/  / altercation/  / was/  / ongoing/ ./ "/  / It/  / would/  / be/  / surprising/  / if/  / the/  / NBA/  / decided/  / to/  / punish/  / two/  / of/  / Cleveland/ '/ s/  / starters/ ,/  / but/  / if/  / the/  / league/  / chooses/  / to/  / stick/  / to/  / the/  / le/ tt/ er/  / of/  / the/  / law/ ,/  / there/  / is/  / justification/ ./  / The/  / NBA/  / will/  / likely/  / announce/  / their/  / decision/  / shortly/ ./ 
+/ 
+/ Source/ :/  / ESPN/ 
+/ 
+/ =/ =/ =/ =/ =/ =/ =/ =/ =/ =/ =/ =/ =/ =/ 
+/ Thompson/ 在/ 第一/ 戰比賽/ 最後將/ 球頂/ 著/ 嘴綠/ 的/ 臉/ ，/ 及/ Love/ 在/ 當時/ 不是/ 場上/ 球員/ 卻/ 到/ 了/ 場上/ ，/ 都/ 可能/ 面臨/ 一場/ 禁賽/ .../ 等待/ 聯盟/ 判決/ 吧/ ！/ 
+/ 
+/ -/ -/ 
+
+=======================LABEL======================
+CAV_TERM
+tt/ Love/ 
+WAR_TERM
+嘴綠/ Green/ 
+cav_score: 4 / war_score: 2
+CAV
+=======================POSITIVE===================
+0
+
+=======================NEGATIVE===================
+2
+不是/ 判決/ 
