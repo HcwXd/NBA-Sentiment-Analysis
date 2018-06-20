@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 war_match_dict = ["勇士", "咖哩", "柯瑞", "K湯", "Curry", "CURRY", "curry", "KD", "kd", "嘴綠", "Klay", "durant", "Durant",
                   "kerr", "ai", "AI", "McGee", "杜蘭特", "Green", "green", "KT", "kt", "格林", "湯森", "我勇", "浪花", "四巨頭", "四星"]
-cav_match_dict = ["騎士", "詹姆士", "詹姆斯", "姆斯", "詹皇", "LBJ", "lbj", "LeBron", "lebron", "James", "james", 'tt', "TT",
+cav_match_dict = ["騎士", "詹姆士", "喇叭", "詹姆斯", "姆斯", "詹皇", "LBJ", "lbj", "LeBron", "lebron", "James", "james", 'tt', "TT",
                   "Korver", "Jeff", "JR", "jr", "丁尺", "smith", "皇", "我皇", "Smith",  "Cavs", "Lue", "史密斯", "Love", "詹", "我騎", "Hill"]
 
 
@@ -255,5 +255,5 @@ for game_index in range(4):
     output.write("Cav total points: "+str(cav_total_points)+"\n")
     output.write("War total points: "+str(war_total_points)+"\n")
     output.write("Cav good post: "+str(cav_good_posts)+"\n")
-    output.write("War total points: "+str(war_good_posts)+"\n")
+    output.write("War good post: "+str(war_good_posts)+"\n")
     output.close()
