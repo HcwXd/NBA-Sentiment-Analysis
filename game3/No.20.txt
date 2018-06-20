@@ -62,10 +62,10 @@ Re: [花邊] Curry與Perkins發生口頭衝突因後者在Curr
 
 =======================LABEL======================
 CAV_TERM
-詹/ 
+喇叭/ 詹/ 
 WAR_TERM
 Curry/ 嘴綠/ 
-cav_score: 1 / war_score: 6
+cav_score: 3 / war_score: 6
 WAR
 =======================POSITIVE===================
 20

@@ -2,6 +2,7 @@ import requests
 import time
 import re
 import jieba
+import statistics
 
 from bs4 import BeautifulSoup
 
@@ -209,14 +210,22 @@ def count_score(text, team):
 
 for game_index in range(4):
     index = game_index+1
+
     titles_collection = []
     contents_collection = []
     comments_collection = []
+
     cav_total_points = 0
     war_total_points = 0
+
     cav_good_posts = 0
     war_good_posts = 0
-    team = ""
+
+    cav_total_posts = 0
+    war_total_posts = 0
+
+    cav_points_collection = []
+    war_points_collection = []
 
     game_date = ["5/29", "6/1", "6/4", "6/7", "6/9"]
     data_date = ["5/31", "6/3", "6/6", "6/8"]
@@ -226,25 +235,68 @@ for game_index in range(4):
     for i in range(len(titles_collection)):
         file_name = './game'+str(index)+'/No.'+str(i)+".txt"
         output = open(file_name, 'w+')
+
         output.write("=======================TITLE======================\n")
         output.write(titles_collection[i])
+
         output.write("\n=======================CONTENT====================\n")
         seg = jieba.cut(contents_collection[i], cut_all=False)
         output.write("/ ".join(seg))
+
         output.write("\n=======================LABEL======================\n")
         team = team_label(word_frequecy(contents_collection[i]))
+        if(team == "WAR"):
+            war_total_posts += 1
+        elif(team == "CAV"):
+            cav_total_posts += 1
         output.write(team)
         point_table = count_score(contents_collection[i], team)
         output.close()
+
         war_total_points += point_table[0]
         war_good_posts += point_table[1]
         cav_total_points += point_table[2]
         cav_good_posts += point_table[3]
 
+        war_points_collection.append(point_table[0])
+        cav_points_collection.append(point_table[2])
+
     file_name = './game'+str(index)+'/predict.txt'
     output = open(file_name, 'w+')
-    output.write("Cav total points: "+str(cav_total_points)+"\n")
-    output.write("War total points: "+str(war_total_points)+"\n")
-    output.write("Cav good post: "+str(cav_good_posts)+"\n")
-    output.write("War good post: "+str(war_good_posts)+"\n")
+
+    output.write("======================CAV_STAT======================\n")
+    output.write("Total posts:\t "+str(cav_total_posts)+"\n")
+    # output.write("Good post:\t\t " +
+    #              str((cav_good_posts+cav_total_posts)/2)+"\n")
+    # output.write("Bad post:\t\t " +
+    #              str((cav_total_posts - cav_good_posts)/2)+"\n")
+    output.write("Post scores:\t "+str(cav_good_posts)+"\n")
+
+    output.write("Total points:\t "+str(cav_total_points)+"\n")
+    output.write("Best points:\t "+str(max(cav_points_collection)))
+    output.write("   \tat post No." +
+                 str(cav_points_collection.index(max(cav_points_collection)))+"\n")
+    output.write("Worst points:\t "+str(min(cav_points_collection)))
+    output.write("   \tat post No." +
+                 str(cav_points_collection.index(min(cav_points_collection)))+"\n")
+    output.write(
+        "Stdev:\t\t\t "+str(statistics.stdev(cav_points_collection))+"\n")
+
+    output.write("======================WAR_STAT======================\n")
+    output.write("Total posts:\t "+str(war_total_posts)+"\n")
+    # output.write("Good post:\t\t " +
+    #              str((war_good_posts+war_total_posts)/2)+"\n")
+    # output.write("Bad post:\t\t " +
+    #              str((war_total_posts - war_good_posts)/2)+"\n")
+    output.write("Post scores:\t "+str(war_good_posts)+"\n")
+
+    output.write("Total points:\t "+str(war_total_points)+"\n")
+    output.write("Best points:\t "+str(max(war_points_collection)))
+    output.write("   \tat post No." +
+                 str(war_points_collection.index(max(war_points_collection)))+"\n")
+    output.write("Worst points:\t "+str(min(war_points_collection)))
+    output.write("   \tat post No." +
+                 str(war_points_collection.index(min(war_points_collection)))+"\n")
+    output.write(
+        "Stdev:\t\t\t "+str(statistics.stdev(war_points_collection))+"\n")
     output.close()

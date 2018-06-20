@@ -23,11 +23,11 @@
 
 =======================LABEL======================
 CAV_TERM
-姆斯/ JR/ Hill/ 
+喇叭/ 姆斯/ JR/ Hill/ 
 WAR_TERM
 咖哩/ KD/ 
-cav_score: 3 / war_score: 3
-EQ
+cav_score: 7 / war_score: 3
+CAV
 =======================POSITIVE===================
 7
 全力/ 機會/ 值得/ 漂亮/ 明顯/ 奇妙/ 改進/ 

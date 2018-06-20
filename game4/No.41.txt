@@ -26,10 +26,10 @@ Re: [討論] lbj算不算是kd的手下敗將呢?
 
 =======================LABEL======================
 CAV_TERM
-騎士/ JR/ 詹/ 
+騎士/ 喇叭/ JR/ 詹/ 
 WAR_TERM
 勇士/ Curry/ KD/ KT/ 
-cav_score: 7 / war_score: 5
+cav_score: 11 / war_score: 5
 CAV
 =======================POSITIVE===================
 4

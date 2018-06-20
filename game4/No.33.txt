@@ -26,10 +26,10 @@
 
 =======================LABEL======================
 CAV_TERM
-騎士/ lbj/ TT/ 詹/ 
+騎士/ 喇叭/ lbj/ TT/ 詹/ 
 WAR_TERM
 勇士/ KD/ kd/ 
-cav_score: 4 / war_score: 7
+cav_score: 5 / war_score: 7
 WAR
 =======================POSITIVE===================
 2
