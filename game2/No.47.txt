@@ -51,7 +51,7 @@ CAV_TERM
 WAR_TERM
 咖哩/ 我勇/ 
 cav_score: 5 / war_score: 6
-WAR
+CAV
 =======================POSITIVE===================
 7
 小心/ 完美/ 幸福/ 希望/ 感動/ 謝謝/ 謝謝/ 

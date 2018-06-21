@@ -41,7 +41,7 @@ CAV_TERM
 WAR_TERM
 勇士/ Curry/ KD/ Green/ KT/ 
 cav_score: 6 / war_score: 8
-WAR
+CAV
 =======================POSITIVE===================
 2
 穩定/ 特別/ 

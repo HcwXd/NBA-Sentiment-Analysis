@@ -38,7 +38,7 @@ CAV_TERM
 WAR_TERM
 kerr/ AI/ 四巨頭/ 
 cav_score: 2 / war_score: 6
-WAR
+CAV
 =======================POSITIVE===================
 5
 自然/ 固定/ 休息/ 明顯/ 認真/ 

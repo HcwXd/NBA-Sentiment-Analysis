@@ -32,7 +32,7 @@ LBJ/
 WAR_TERM
 勇士/ 嘴綠/ 
 cav_score: 1 / war_score: 2
-WAR
+CAV
 =======================POSITIVE===================
 6
 成長/ 相信/ 機會/ 知道/ 知道/ 快樂/ 

@@ -1,14 +1,14 @@
 ======================CAV_STAT======================
-Total posts:	 21
-Post scores:	 -9
-Total points:	 -31
-Best points:	 4   	at post No.37
-Worst points:	 -4   	at post No.4
-Stdev:			 1.759750847250105
-======================WAR_STAT======================
-Total posts:	 21
-Post scores:	 4
-Total points:	 31
+Total posts:	 24
+Post scores:	 -8
+Total points:	 -18
 Best points:	 17   	at post No.13
+Worst points:	 -6   	at post No.17
+Stdev:			 3.301290669505882
+======================WAR_STAT======================
+Total posts:	 18
+Post scores:	 3
+Total points:	 18
+Best points:	 11   	at post No.19
 Worst points:	 -8   	at post No.21
-Stdev:			 3.933041579700535
+Stdev:			 2.8879717016762605

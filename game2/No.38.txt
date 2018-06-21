@@ -32,7 +32,7 @@ CAV_TERM
 WAR_TERM
 勇士/ 
 cav_score: 3 / war_score: 4
-WAR
+CAV
 =======================POSITIVE===================
 2
 確定/ 信心/ 

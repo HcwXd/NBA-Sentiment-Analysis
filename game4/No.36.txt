@@ -52,7 +52,7 @@ Lue/
 WAR_TERM
 勇士/ Curry/ KD/ 
 cav_score: 2 / war_score: 5
-WAR
+CAV
 =======================POSITIVE===================
 3
 成功/ 很多/ 真正/ 

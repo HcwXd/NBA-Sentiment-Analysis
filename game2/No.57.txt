@@ -72,7 +72,7 @@ CAV_TERM
 WAR_TERM
 勇士/ 
 cav_score: 4 / war_score: 4
-EQ
+WAR
 =======================POSITIVE===================
 8
 能力/ 習慣/ 適應/ 能力/ 正常/ 進行/ 知道/ 知道/ 

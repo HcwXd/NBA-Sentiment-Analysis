@@ -72,7 +72,7 @@ CAV_TERM
 WAR_TERM
 勇士/ 
 cav_score: 6 / war_score: 6
-EQ
+CAV
 =======================POSITIVE===================
 3
 肯定/ 知道/ 機會/ 

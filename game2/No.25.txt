@@ -28,7 +28,7 @@ CAV_TERM
 WAR_TERM
 勇士/ 咖哩/ 
 cav_score: 2 / war_score: 2
-EQ
+WAR
 =======================POSITIVE===================
 1
 知道/ 

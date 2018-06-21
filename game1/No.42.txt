@@ -50,7 +50,7 @@ CAV_TERM
 WAR_TERM
 勇士/ Curry/ 
 cav_score: 8 / war_score: 3
-CAV
+EQ
 =======================POSITIVE===================
 1
 成為/ 

@@ -28,7 +28,7 @@ LBJ/ JR/ 詹/ 我騎/
 WAR_TERM
 勇士/ Curry/ 嘴綠/ 
 cav_score: 4 / war_score: 5
-WAR
+CAV
 =======================POSITIVE===================
 6
 穩定/ 期待/ 當然/ 希望/ 支援/ 希望/ 

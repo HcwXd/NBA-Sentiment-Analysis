@@ -54,7 +54,7 @@ James/
 WAR_TERM
 勇士/ Curry/ KD/ 
 cav_score: 3 / war_score: 3
-EQ
+CAV
 =======================POSITIVE===================
 3
 好奇/ 休息/ 休息/ 

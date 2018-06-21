@@ -18,7 +18,7 @@ CAV_TERM
 WAR_TERM
 
 cav_score: 0 / war_score: 0
-EQ
+CAV
 =======================POSITIVE===================
 4
 機會/ 很多/ 考慮/ 保證/ 

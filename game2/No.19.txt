@@ -37,7 +37,7 @@ CAV_TERM
 WAR_TERM
 勇士/ KD/ AI/ 浪花/ 
 cav_score: 5 / war_score: 6
-WAR
+CAV
 =======================POSITIVE===================
 6
 領先/ 優勢/ 機會/ 出色/ 全力/ 把握/ 

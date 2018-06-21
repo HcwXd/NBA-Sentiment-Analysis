@@ -25,7 +25,7 @@ CAV_TERM
 WAR_TERM
 勇士/ 
 cav_score: 3 / war_score: 5
-WAR
+CAV
 =======================POSITIVE===================
 4
 的確/ 很多/ 地位/ 創造/ 

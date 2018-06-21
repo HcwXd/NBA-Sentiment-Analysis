@@ -41,7 +41,7 @@ CAV_TERM
 WAR_TERM
 
 cav_score: 2 / war_score: 0
-CAV
+WAR
 =======================POSITIVE===================
 1
 原諒/ 

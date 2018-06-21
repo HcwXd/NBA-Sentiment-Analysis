@@ -23,7 +23,7 @@ CAV_TERM
 WAR_TERM
 咖哩/ Curry/ KD/ 
 cav_score: 5 / war_score: 3
-CAV
+WAR
 =======================POSITIVE===================
 2
 瘋狂/ 想像/ 

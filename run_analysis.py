@@ -131,7 +131,7 @@ def word_frequecy(text):
     return frequency
 
 
-def team_label(word_frequency):
+def team_label(word_frequency, title):
     cav_score = 0
     war_score = 0
     output.write("CAV_TERM\n")
@@ -144,8 +144,14 @@ def team_label(word_frequency):
         if word in word_frequency:
             output.write(word + "/ ")
             war_score += word_frequency[word]
+
     output.write("\ncav_score: "+str(cav_score) +
                  " / war_score: "+str(war_score)+"\n")
+
+    if any(re.search(s, title, re.IGNORECASE) for s in war_match_dict):
+        war_score += 5
+    if any(re.search(s, title, re.IGNORECASE) for s in cav_match_dict):
+        cav_score += 5
     if(cav_score > war_score):
         return "CAV"
     elif(cav_score < war_score):
@@ -244,7 +250,8 @@ for game_index in range(4):
         output.write("/ ".join(seg))
 
         output.write("\n=======================LABEL======================\n")
-        team = team_label(word_frequecy(contents_collection[i]))
+        team = team_label(word_frequecy(
+            contents_collection[i]), titles_collection[i])
         if(team == "WAR"):
             war_total_posts += 1
         elif(team == "CAV"):
