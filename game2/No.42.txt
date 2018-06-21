@@ -55,7 +55,7 @@ CAV_TERM
 姆斯/ JR/ 
 WAR_TERM
 勇士/ KD/ 
-cav_score: 3 / war_score: 2
+cav_score: 8 / war_score: 2
 CAV
 =======================POSITIVE===================
 5

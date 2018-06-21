@@ -29,7 +29,7 @@ CAV_TERM
 騎士/ LBJ/ Love/ 詹/ 
 WAR_TERM
 勇士/ KD/ 
-cav_score: 9 / war_score: 4
+cav_score: 14 / war_score: 4
 CAV
 =======================POSITIVE===================
 4

@@ -22,7 +22,7 @@ CAV_TERM
 喇叭/ JR/ 丁尺/ 
 WAR_TERM
 咖哩/ Curry/ KD/ 
-cav_score: 5 / war_score: 3
+cav_score: 5 / war_score: 8
 WAR
 =======================POSITIVE===================
 2

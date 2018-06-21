@@ -34,7 +34,7 @@ CAV_TERM
 騎士/ LBJ/ JR/ 
 WAR_TERM
 浪花/ 
-cav_score: 6 / war_score: 1
+cav_score: 11 / war_score: 1
 CAV
 =======================POSITIVE===================
 2

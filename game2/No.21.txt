@@ -38,7 +38,7 @@ CAV_TERM
 騎士/ 
 WAR_TERM
 勇士/ curry/ KD/ kd/ green/ kt/ 浪花/ 
-cav_score: 1 / war_score: 10
+cav_score: 1 / war_score: 15
 WAR
 =======================POSITIVE===================
 5

@@ -30,7 +30,7 @@ CAV_TERM
 騎士/ LBJ/ TT/ Jeff/ JR/ Love/ 詹/ Hill/ 
 WAR_TERM
 勇士/ Curry/ KD/ 嘴綠/ Green/ KT/ 四巨頭/ 
-cav_score: 11 / war_score: 9
+cav_score: 16 / war_score: 14
 CAV
 =======================POSITIVE===================
 7

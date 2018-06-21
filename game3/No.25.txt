@@ -48,7 +48,7 @@ CAV_TERM
 騎士/ 姆斯/ TT/ JR/ 
 WAR_TERM
 
-cav_score: 9 / war_score: 0
+cav_score: 14 / war_score: 0
 CAV
 =======================POSITIVE===================
 8

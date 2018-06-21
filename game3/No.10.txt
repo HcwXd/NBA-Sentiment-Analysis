@@ -71,7 +71,7 @@ CAV_TERM
 騎士/ LBJ/ Korver/ Love/ 
 WAR_TERM
 勇士/ 
-cav_score: 6 / war_score: 6
+cav_score: 11 / war_score: 6
 CAV
 =======================POSITIVE===================
 3

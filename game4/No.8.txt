@@ -36,7 +36,7 @@ CAV_TERM
 姆斯/ LBJ/ 
 WAR_TERM
 AI/ 
-cav_score: 5 / war_score: 1
+cav_score: 10 / war_score: 1
 CAV
 =======================POSITIVE===================
 2

@@ -33,7 +33,7 @@ CAV_TERM
 LBJ/ TT/ Love/ 
 WAR_TERM
 勇士/ 
-cav_score: 4 / war_score: 1
+cav_score: 9 / war_score: 1
 CAV
 =======================POSITIVE===================
 5

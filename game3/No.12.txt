@@ -38,7 +38,7 @@ CAV_TERM
 騎士/ LBJ/ 
 WAR_TERM
 勇士/ Curry/ curry/ 
-cav_score: 7 / war_score: 7
+cav_score: 12 / war_score: 12
 EQ
 =======================POSITIVE===================
 4

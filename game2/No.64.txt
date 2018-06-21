@@ -26,7 +26,7 @@ CAV_TERM
 騎士/ 姆斯/ LBJ/ JR/ Lue/ 
 WAR_TERM
 
-cav_score: 13 / war_score: 0
+cav_score: 18 / war_score: 0
 CAV
 =======================POSITIVE===================
 1

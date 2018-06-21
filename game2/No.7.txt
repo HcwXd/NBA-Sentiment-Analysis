@@ -45,7 +45,7 @@ CAV_TERM
 JR/ Smith/ 
 WAR_TERM
 勇士/ K湯/ 
-cav_score: 11 / war_score: 3
+cav_score: 16 / war_score: 3
 CAV
 =======================POSITIVE===================
 6

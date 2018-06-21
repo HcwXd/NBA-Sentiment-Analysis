@@ -102,7 +102,7 @@ CAV_TERM
 LBJ/ tt/ Love/ Hill/ 
 WAR_TERM
 勇士/ Curry/ Durant/ ai/ Green/ kt/ 
-cav_score: 9 / war_score: 10
+cav_score: 14 / war_score: 10
 CAV
 =======================POSITIVE===================
 29

@@ -38,7 +38,7 @@ CAV_TERM
 TT/ 丁尺/ 
 WAR_TERM
 
-cav_score: 2 / war_score: 0
+cav_score: 7 / war_score: 0
 CAV
 =======================POSITIVE===================
 3

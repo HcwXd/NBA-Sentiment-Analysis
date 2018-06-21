@@ -53,7 +53,7 @@ CAV_TERM
 騎士/ jr/ smith/ 
 WAR_TERM
 
-cav_score: 3 / war_score: 0
+cav_score: 8 / war_score: 0
 CAV
 =======================POSITIVE===================
 1

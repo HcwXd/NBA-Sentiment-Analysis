@@ -64,7 +64,7 @@ CAV_TERM
 騎士/ 姆斯/ 
 WAR_TERM
 kerr/ 
-cav_score: 10 / war_score: 1
+cav_score: 15 / war_score: 1
 CAV
 =======================POSITIVE===================
 5

@@ -17,7 +17,7 @@ CAV_TERM
 
 WAR_TERM
 
-cav_score: 0 / war_score: 0
+cav_score: 5 / war_score: 0
 CAV
 =======================POSITIVE===================
 4

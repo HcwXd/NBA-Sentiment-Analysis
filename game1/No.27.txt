@@ -31,7 +31,7 @@ CAV_TERM
 詹姆斯/ 姆斯/ 詹/ Hill/ 
 WAR_TERM
 
-cav_score: 7 / war_score: 0
+cav_score: 12 / war_score: 0
 CAV
 =======================POSITIVE===================
 3

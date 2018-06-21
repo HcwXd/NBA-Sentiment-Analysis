@@ -38,7 +38,7 @@ CAV_TERM
 騎士/ 
 WAR_TERM
 勇士/ 嘴綠/ 
-cav_score: 1 / war_score: 6
+cav_score: 1 / war_score: 11
 WAR
 =======================POSITIVE===================
 3

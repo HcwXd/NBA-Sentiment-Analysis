@@ -55,7 +55,7 @@ CAV_TERM
 Love/ 
 WAR_TERM
 嘴綠/ Green/ 
-cav_score: 1 / war_score: 2
+cav_score: 1 / war_score: 7
 WAR
 =======================POSITIVE===================
 5

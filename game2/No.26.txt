@@ -33,7 +33,7 @@ CAV_TERM
 騎士/ LBJ/ JR/ Hill/ 
 WAR_TERM
 Green/ 
-cav_score: 8 / war_score: 1
+cav_score: 13 / war_score: 1
 CAV
 =======================POSITIVE===================
 1

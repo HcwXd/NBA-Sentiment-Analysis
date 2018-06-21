@@ -26,7 +26,7 @@ CAV_TERM
 騎士/ 姆斯/ 
 WAR_TERM
 勇士/ KD/ 
-cav_score: 11 / war_score: 2
+cav_score: 16 / war_score: 2
 CAV
 =======================POSITIVE===================
 8

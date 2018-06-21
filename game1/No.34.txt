@@ -28,7 +28,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ KD/ 嘴綠/ KT/ 
-cav_score: 0 / war_score: 5
+cav_score: 5 / war_score: 5
 EQ
 =======================POSITIVE===================
 2

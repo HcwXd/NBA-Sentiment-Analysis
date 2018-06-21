@@ -50,7 +50,7 @@ CAV_TERM
 騎士/ TT/ JR/ 
 WAR_TERM
 勇士/ 
-cav_score: 8 / war_score: 1
+cav_score: 13 / war_score: 1
 CAV
 =======================POSITIVE===================
 4

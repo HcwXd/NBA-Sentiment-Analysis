@@ -31,7 +31,7 @@ CAV_TERM
 LBJ/ 
 WAR_TERM
 勇士/ 嘴綠/ 
-cav_score: 1 / war_score: 2
+cav_score: 6 / war_score: 2
 CAV
 =======================POSITIVE===================
 6

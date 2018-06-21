@@ -26,7 +26,7 @@ CAV_TERM
 詹皇/ 詹/ 
 WAR_TERM
 勇士/ 
-cav_score: 2 / war_score: 3
+cav_score: 7 / war_score: 3
 CAV
 =======================POSITIVE===================
 1

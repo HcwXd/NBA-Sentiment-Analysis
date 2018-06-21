@@ -84,7 +84,7 @@ CAV_TERM
 LBJ/ JR/ Hill/ 
 WAR_TERM
 Curry/ KT/ 
-cav_score: 17 / war_score: 4
+cav_score: 22 / war_score: 4
 CAV
 =======================POSITIVE===================
 15

@@ -30,7 +30,7 @@ CAV_TERM
 騎士/ 喇叭/ 詹/ 
 WAR_TERM
 勇士/ kd/ 
-cav_score: 19 / war_score: 7
+cav_score: 24 / war_score: 12
 CAV
 =======================POSITIVE===================
 10

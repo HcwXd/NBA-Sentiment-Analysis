@@ -65,7 +65,7 @@ CAV_TERM
 喇叭/ 詹/ 
 WAR_TERM
 Curry/ 嘴綠/ 
-cav_score: 3 / war_score: 6
+cav_score: 3 / war_score: 11
 WAR
 =======================POSITIVE===================
 20

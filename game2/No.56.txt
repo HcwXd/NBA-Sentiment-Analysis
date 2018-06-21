@@ -45,7 +45,7 @@ CAV_TERM
 詹皇/ TT/ JR/ 丁尺/ 我皇/ 
 WAR_TERM
 勇士/ 杜蘭特/ 
-cav_score: 6 / war_score: 2
+cav_score: 11 / war_score: 2
 CAV
 =======================POSITIVE===================
 3

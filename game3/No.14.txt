@@ -46,7 +46,7 @@ CAV_TERM
 騎士/ 姆斯/ lbj/ 
 WAR_TERM
 嘴綠/ kt/ 
-cav_score: 11 / war_score: 8
+cav_score: 16 / war_score: 8
 CAV
 =======================POSITIVE===================
 17

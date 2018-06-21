@@ -54,7 +54,7 @@ CAV_TERM
 姆斯/ LBJ/ TT/ JR/ 
 WAR_TERM
 
-cav_score: 11 / war_score: 0
+cav_score: 16 / war_score: 0
 CAV
 =======================POSITIVE===================
 7

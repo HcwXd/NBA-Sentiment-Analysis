@@ -31,7 +31,7 @@ CAV_TERM
 我騎/ 
 WAR_TERM
 勇士/ Green/ KT/ 
-cav_score: 2 / war_score: 7
+cav_score: 2 / war_score: 12
 WAR
 =======================POSITIVE===================
 1

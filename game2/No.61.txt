@@ -23,7 +23,7 @@ CAV_TERM
 姆斯/ 
 WAR_TERM
 
-cav_score: 6 / war_score: 0
+cav_score: 11 / war_score: 0
 CAV
 =======================POSITIVE===================
 11

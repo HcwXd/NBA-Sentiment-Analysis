@@ -54,7 +54,7 @@ CAV_TERM
 騎士/ JR/ 
 WAR_TERM
 勇士/ 
-cav_score: 6 / war_score: 3
+cav_score: 11 / war_score: 8
 CAV
 =======================POSITIVE===================
 5

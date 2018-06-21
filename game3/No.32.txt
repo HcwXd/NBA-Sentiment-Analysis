@@ -51,7 +51,7 @@ CAV_TERM
 騎士/ 姆斯/ LBJ/ 
 WAR_TERM
 勇士/ 咖哩/ CURRY/ KD/ 
-cav_score: 7 / war_score: 10
+cav_score: 7 / war_score: 15
 WAR
 =======================POSITIVE===================
 13

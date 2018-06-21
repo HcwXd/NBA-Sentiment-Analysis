@@ -56,7 +56,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ K湯/ Curry/ KD/ Green/ 
-cav_score: 0 / war_score: 8
+cav_score: 0 / war_score: 13
 WAR
 =======================POSITIVE===================
 4

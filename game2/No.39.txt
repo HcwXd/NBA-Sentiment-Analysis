@@ -34,7 +34,7 @@ CAV_TERM
 JR/ Smith/ 
 WAR_TERM
 Green/ 
-cav_score: 2 / war_score: 1
+cav_score: 7 / war_score: 1
 CAV
 =======================POSITIVE===================
 2

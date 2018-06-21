@@ -36,7 +36,7 @@ CAV_TERM
 騎士/ LBJ/ 
 WAR_TERM
 勇士/ AI/ 
-cav_score: 2 / war_score: 6
+cav_score: 2 / war_score: 11
 WAR
 =======================POSITIVE===================
 3

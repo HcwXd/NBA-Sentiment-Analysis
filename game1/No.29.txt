@@ -39,7 +39,7 @@ CAV_TERM
 騎士/ 喇叭/ TT/ JR/ 
 WAR_TERM
 勇士/ 四星/ 
-cav_score: 9 / war_score: 5
+cav_score: 14 / war_score: 10
 CAV
 =======================POSITIVE===================
 0

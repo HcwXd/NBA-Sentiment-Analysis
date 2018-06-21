@@ -28,7 +28,7 @@ CAV_TERM
 騎士/ LBJ/ 
 WAR_TERM
 勇士/ KD/ KT/ 
-cav_score: 3 / war_score: 8
+cav_score: 3 / war_score: 13
 WAR
 =======================POSITIVE===================
 7

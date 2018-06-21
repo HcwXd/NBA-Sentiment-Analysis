@@ -28,7 +28,7 @@ CAV_TERM
 
 WAR_TERM
 KD/ 
-cav_score: 0 / war_score: 1
+cav_score: 0 / war_score: 6
 WAR
 =======================POSITIVE===================
 1

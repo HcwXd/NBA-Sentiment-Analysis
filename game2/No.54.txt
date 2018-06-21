@@ -39,7 +39,7 @@ CAV_TERM
 騎士/ 詹姆士/ 詹/ 
 WAR_TERM
 勇士/ 
-cav_score: 10 / war_score: 3
+cav_score: 10 / war_score: 8
 CAV
 =======================POSITIVE===================
 5

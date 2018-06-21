@@ -51,7 +51,7 @@ CAV_TERM
 Lue/ 
 WAR_TERM
 勇士/ Curry/ KD/ 
-cav_score: 2 / war_score: 5
+cav_score: 7 / war_score: 5
 CAV
 =======================POSITIVE===================
 3

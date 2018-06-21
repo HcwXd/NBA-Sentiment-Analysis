@@ -28,7 +28,7 @@ CAV_TERM
 lbj/ 
 WAR_TERM
 勇士/ curry/ kd/ 
-cav_score: 1 / war_score: 5
+cav_score: 1 / war_score: 10
 WAR
 =======================POSITIVE===================
 3

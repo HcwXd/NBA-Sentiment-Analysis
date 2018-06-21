@@ -36,7 +36,7 @@ CAV_TERM
 騎士/ 
 WAR_TERM
 勇士/ KD/ AI/ 浪花/ 
-cav_score: 5 / war_score: 6
+cav_score: 10 / war_score: 6
 CAV
 =======================POSITIVE===================
 6

@@ -48,7 +48,7 @@ CAV_TERM
 騎士/ LeBron/ James/ JR/ Smith/ Lue/ 
 WAR_TERM
 
-cav_score: 19 / war_score: 0
+cav_score: 24 / war_score: 0
 CAV
 =======================POSITIVE===================
 4

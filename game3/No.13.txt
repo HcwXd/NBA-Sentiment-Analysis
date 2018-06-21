@@ -39,7 +39,7 @@ CAV_TERM
 姆斯/ tt/ jr/ 
 WAR_TERM
 勇士/ curry/ 
-cav_score: 9 / war_score: 2
+cav_score: 14 / war_score: 2
 CAV
 =======================POSITIVE===================
 3

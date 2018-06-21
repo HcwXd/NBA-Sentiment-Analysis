@@ -30,7 +30,7 @@ CAV_TERM
 LBJ/ TT/ JR/ Lue/ Love/ 
 WAR_TERM
 Curry/ 
-cav_score: 8 / war_score: 1
+cav_score: 13 / war_score: 1
 CAV
 =======================POSITIVE===================
 2

@@ -61,7 +61,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ 柯瑞/ KD/ 
-cav_score: 0 / war_score: 22
+cav_score: 0 / war_score: 27
 WAR
 =======================POSITIVE===================
 6

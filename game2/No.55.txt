@@ -42,7 +42,7 @@ CAV_TERM
 騎士/ James/ 
 WAR_TERM
 勇士/ 咖哩/ KD/ KT/ 
-cav_score: 5 / war_score: 8
+cav_score: 10 / war_score: 8
 CAV
 =======================POSITIVE===================
 14

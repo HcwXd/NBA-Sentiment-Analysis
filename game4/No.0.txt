@@ -40,7 +40,7 @@ CAV_TERM
 騎士/ LBJ/ 
 WAR_TERM
 
-cav_score: 2 / war_score: 0
+cav_score: 2 / war_score: 5
 WAR
 =======================POSITIVE===================
 1

@@ -15,7 +15,7 @@ CAV_TERM
 LBJ/ JR/ 
 WAR_TERM
 CURRY/ KD/ 
-cav_score: 2 / war_score: 5
+cav_score: 7 / war_score: 5
 CAV
 =======================POSITIVE===================
 0

@@ -32,7 +32,7 @@ CAV_TERM
 lbj/ 
 WAR_TERM
 勇士/ Curry/ KD/ kd/ ai/ Green/ green/ KT/ 
-cav_score: 2 / war_score: 8
+cav_score: 2 / war_score: 13
 WAR
 =======================POSITIVE===================
 4

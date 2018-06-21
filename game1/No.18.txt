@@ -27,7 +27,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ KD/ 嘴綠/ 浪花/ 
-cav_score: 0 / war_score: 6
+cav_score: 0 / war_score: 11
 WAR
 =======================POSITIVE===================
 4

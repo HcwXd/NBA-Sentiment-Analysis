@@ -36,7 +36,7 @@ CAV_TERM
 騎士/ 
 WAR_TERM
 Curry/ 嘴綠/ 
-cav_score: 2 / war_score: 7
+cav_score: 7 / war_score: 7
 EQ
 =======================POSITIVE===================
 0

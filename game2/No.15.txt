@@ -56,7 +56,7 @@ CAV_TERM
 騎士/ LBJ/ LeBron/ JR/ Love/ Hill/ 
 WAR_TERM
 勇士/ Curry/ KD/ 嘴綠/ KT/ 浪花/ 
-cav_score: 15 / war_score: 11
+cav_score: 20 / war_score: 11
 CAV
 =======================POSITIVE===================
 8

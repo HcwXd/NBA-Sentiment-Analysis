@@ -107,7 +107,7 @@ CAV_TERM
 騎士/ LeBron/ James/ Korver/ Jeff/ JR/ Smith/ Love/ Hill/ 
 WAR_TERM
 勇士/ Green/ 
-cav_score: 20 / war_score: 2
+cav_score: 25 / war_score: 2
 CAV
 =======================POSITIVE===================
 7

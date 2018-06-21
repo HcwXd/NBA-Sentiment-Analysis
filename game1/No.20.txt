@@ -59,7 +59,7 @@ CAV_TERM
 騎士/ 
 WAR_TERM
 勇士/ kerr/ 
-cav_score: 1 / war_score: 14
+cav_score: 1 / war_score: 19
 WAR
 =======================POSITIVE===================
 14

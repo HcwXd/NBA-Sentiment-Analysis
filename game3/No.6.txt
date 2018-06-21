@@ -45,7 +45,7 @@ CAV_TERM
 騎士/ 詹皇/ LBJ/ JR/ 我皇/ 詹/ Hill/ 
 WAR_TERM
 勇士/ Curry/ 四星/ 
-cav_score: 26 / war_score: 10
+cav_score: 31 / war_score: 10
 CAV
 =======================POSITIVE===================
 19

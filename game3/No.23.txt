@@ -45,7 +45,7 @@ CAV_TERM
 騎士/ LBJ/ TT/ 
 WAR_TERM
 Curry/ 
-cav_score: 6 / war_score: 7
+cav_score: 6 / war_score: 12
 WAR
 =======================POSITIVE===================
 5

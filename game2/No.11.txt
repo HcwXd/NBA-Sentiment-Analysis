@@ -31,7 +31,7 @@ CAV_TERM
 LBJ/ 
 WAR_TERM
 
-cav_score: 5 / war_score: 0
+cav_score: 10 / war_score: 5
 CAV
 =======================POSITIVE===================
 9

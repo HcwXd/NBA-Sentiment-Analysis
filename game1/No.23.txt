@@ -53,7 +53,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ 
-cav_score: 0 / war_score: 3
+cav_score: 0 / war_score: 8
 WAR
 =======================POSITIVE===================
 3

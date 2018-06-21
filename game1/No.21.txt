@@ -28,7 +28,7 @@ CAV_TERM
 
 WAR_TERM
 勇士/ Green/ KT/ 
-cav_score: 0 / war_score: 11
+cav_score: 0 / war_score: 16
 WAR
 =======================POSITIVE===================
 8

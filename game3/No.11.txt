@@ -18,7 +18,7 @@ CAV_TERM
 騎士/ 丁尺/ 
 WAR_TERM
 勇士/ Curry/ curry/ KD/ KT/ 
-cav_score: 3 / war_score: 7
+cav_score: 8 / war_score: 7
 CAV
 =======================POSITIVE===================
 2

@@ -32,7 +32,7 @@ CAV_TERM
 騎士/ 姆斯/ 詹/ 
 WAR_TERM
 
-cav_score: 6 / war_score: 0
+cav_score: 11 / war_score: 5
 CAV
 =======================POSITIVE===================
 2

@@ -42,7 +42,7 @@ CAV_TERM
 姆斯/ 
 WAR_TERM
 勇士/ KD/ 四巨頭/ 
-cav_score: 2 / war_score: 4
+cav_score: 2 / war_score: 9
 WAR
 =======================POSITIVE===================
 12

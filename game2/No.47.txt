@@ -50,7 +50,7 @@ CAV_TERM
 騎士/ 姆斯/ LBJ/ JR/ Hill/ 
 WAR_TERM
 咖哩/ 我勇/ 
-cav_score: 5 / war_score: 6
+cav_score: 10 / war_score: 6
 CAV
 =======================POSITIVE===================
 7

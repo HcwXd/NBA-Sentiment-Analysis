@@ -22,7 +22,7 @@ CAV_TERM
 騎士/ 詹姆士/ lbj/ 
 WAR_TERM
 kd/ 
-cav_score: 6 / war_score: 7
+cav_score: 11 / war_score: 12
 WAR
 =======================POSITIVE===================
 1

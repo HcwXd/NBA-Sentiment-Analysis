@@ -49,7 +49,7 @@ CAV_TERM
 詹皇/ 
 WAR_TERM
 咖哩/ CURRY/ 
-cav_score: 1 / war_score: 3
+cav_score: 1 / war_score: 8
 WAR
 =======================POSITIVE===================
 3

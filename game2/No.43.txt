@@ -27,7 +27,7 @@ CAV_TERM
 姆斯/ 
 WAR_TERM
 勇士/ curry/ KT/ 
-cav_score: 3 / war_score: 4
+cav_score: 3 / war_score: 9
 WAR
 =======================POSITIVE===================
 3

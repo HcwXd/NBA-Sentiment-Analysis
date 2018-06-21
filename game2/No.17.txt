@@ -18,7 +18,7 @@ CAV_TERM
 LBJ/ 
 WAR_TERM
 KD/ Durant/ 
-cav_score: 3 / war_score: 2
+cav_score: 8 / war_score: 7
 CAV
 =======================POSITIVE===================
 2

@@ -36,7 +36,7 @@ CAV_TERM
 詹姆斯/ 詹皇/ LBJ/ 丁尺/ 
 WAR_TERM
 柯瑞/ 
-cav_score: 5 / war_score: 1
+cav_score: 10 / war_score: 1
 CAV
 =======================POSITIVE===================
 0

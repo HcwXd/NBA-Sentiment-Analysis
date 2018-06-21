@@ -69,7 +69,7 @@ CAV_TERM
 騎士/ LBJ/ Jeff/ Love/ 
 WAR_TERM
 勇士/ K湯/ Curry/ KD/ 嘴綠/ Green/ 格林/ 
-cav_score: 12 / war_score: 10
+cav_score: 17 / war_score: 10
 CAV
 =======================POSITIVE===================
 6

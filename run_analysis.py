@@ -145,13 +145,14 @@ def team_label(word_frequency, title):
             output.write(word + "/ ")
             war_score += word_frequency[word]
 
-    output.write("\ncav_score: "+str(cav_score) +
-                 " / war_score: "+str(war_score)+"\n")
-
     if any(re.search(s, title, re.IGNORECASE) for s in war_match_dict):
         war_score += 5
     if any(re.search(s, title, re.IGNORECASE) for s in cav_match_dict):
         cav_score += 5
+
+    output.write("\ncav_score: "+str(cav_score) +
+                 " / war_score: "+str(war_score)+"\n")
+
     if(cav_score > war_score):
         return "CAV"
     elif(cav_score < war_score):

@@ -74,7 +74,7 @@ CAV_TERM
 騎士/ 姆斯/ TT/ JR/ 詹/ 
 WAR_TERM
 勇士/ 咖哩/ K湯/ KD/ 嘴綠/ 四星/ 
-cav_score: 22 / war_score: 10
+cav_score: 27 / war_score: 10
 CAV
 =======================POSITIVE===================
 14

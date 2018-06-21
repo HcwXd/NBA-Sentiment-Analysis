@@ -26,7 +26,7 @@ CAV_TERM
 LBJ/ 
 WAR_TERM
 勇士/ K湯/ KD/ 嘴綠/ 
-cav_score: 3 / war_score: 9
+cav_score: 8 / war_score: 14
 WAR
 =======================POSITIVE===================
 4

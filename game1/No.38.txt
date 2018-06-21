@@ -53,7 +53,7 @@ CAV_TERM
 James/ 
 WAR_TERM
 勇士/ Curry/ KD/ 
-cav_score: 3 / war_score: 3
+cav_score: 8 / war_score: 3
 CAV
 =======================POSITIVE===================
 3
